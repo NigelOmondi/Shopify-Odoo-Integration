@@ -19,6 +19,13 @@ app.post('/webhook/odoo-product-update', (req, res) => {
     res.status(200).send('Webhook received');
 });
 
+app.post('/webhook/odoo-purchase-order-created', (req, res) => {
+    console.log('Received webhook data for purchase order created from Odoo:', req.body);
+    // Process the webhook data here (e.g., sync to Shopify)
+    res.status(200).send('Webhook received');
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
