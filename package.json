@@ -21,6 +21,6 @@
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
-    "expresss": "^0.0.0"
+    "express": "^5.2.1"
   }
 }
